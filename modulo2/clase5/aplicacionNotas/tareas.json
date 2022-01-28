@@ -1,0 +1,20 @@
+[
+    {"titulo":"limpiar",
+    "estado":"en proceso"
+    }, 
+    {"titulo":"curso",
+    "estado":"terminado"
+    } ,
+    {"titulo":"comer",
+    "estado":"pendiente"
+     },
+     {"titulo":"mirar tele",
+    "estado":"en proceso"
+    }, 
+    {"titulo":"estudiar",
+    "estado":"terminado"
+    } ,
+    {"titulo":"lavar verduras",
+    "estado":"pendiente"
+        }
+]
