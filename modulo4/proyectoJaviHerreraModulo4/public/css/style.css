@@ -1,0 +1,40 @@
+body {
+    background-color: salmon;
+    font-family:sans-serif ;
+}
+/* puedo implementar un estilo a algo en particular y pisa lo general*/
+h1 {
+    font-family: serif;
+}
+p {
+    
+    font-size: 20px;
+}
+li {
+    font-style: italic;
+    font-weight: bold;
+    /*interlineado, que tiene que ser al menos de 8px mas que el tamaño de la letra*/
+    line-height: 24px;
+     /*uso la fuente que habia linkeado desde google fonts en el html*/
+    font-family: 'Comforter', cursive;
+}
+.parrafo-destacado{
+    color:rgb(46, 21, 105);
+    font-size: 30px;
+    line-height: 35px;
+    
+}
+strong{
+    color:seagreen
+}
+/*selector descendente: voy a elegir solo los strong que esten dentro de un p*/
+p strong{
+    background-color: orangered;
+    color: white;
+    font-style: italic;
+}
+
+.parrafo-destacado em{
+    color:white;
+    text-transform: uppercase;
+}
