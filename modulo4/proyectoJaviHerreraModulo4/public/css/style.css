@@ -1,7 +1,63 @@
 body {
-    background-color: salmon;
+    
     font-family:sans-serif ;
 }
+.oculto{
+    display: none;
+}
+/*para que el tamaño del contenedor no exceda el ancho de la pantalla que estoy usando, me conviene poner siempre 
+el ancho en 100% pero si o si poner box-sizing= border-box.
+Con esto hacemos que aunque agreguemos padding o bordes, el tamaño no varíe.*/
+.contenedor03{
+    width: 90%;
+    max-width:1000px;
+    padding: 20px;
+    border:solid rgb(180, 64, 171) 5px;
+    background-color: rgb(225, 250, 114);
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*medidas standard medias query:
+576
+768
+992
+1200
+*/
+
+@media (min-width:570px){
+    .contenedor03{
+        border:solid rgb(212, 94, 16) 5px;
+        background-color: black;
+        color:white;
+        }
+}
+@media(min-width:700px){
+    .contenedor03{
+        background-color: turquoise;
+        width:70%
+    }
+    .oculto{
+        display:block
+    }
+}
+
+
+.contenedor01{
+    width: 90%;
+    padding: 20px;
+    border:solid black 5px;
+    background-color: salmon;
+    box-sizing: border-box;
+}
+.contenedor02{
+    width: 90vw;
+    padding: 20px;
+    border:solid red 5px;
+    background-color: blue;
+    box-sizing: border-box;
+}
+
 /* puedo implementar un estilo a algo en particular y pisa lo general*/
 h1 {
     font-family: serif;
