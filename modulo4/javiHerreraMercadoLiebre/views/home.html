@@ -34,9 +34,56 @@
                 <li><a href ='#'>Mis compras  </a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
-        
-
     </header>
+    <main>
+        <form action='/crear-producto' method="POST" class='create-form'>
+        <!--aca va a ir el formulario-->
+        <div class='control-formulario'>
+            <label>Nombre del Producto</label>
+            <input type='text' class='control'>
+        </div>
+        <div class='control-formulario'>
+            <label>Precio:</label>
+            <input type='text' name='nombre' placeholder="solo numeros" class='control'>
+        </div>
+        <div class='control-formulario'>
+            <label>Nombre del Producto</label>
+            <input type='text'name='precio' class='control'>
+        </div>
+        
+        <div class='control-formulario'>
+            <label>Categoría:</label>
+            <select name="categoria" class='control'>
+                <option value ='hogar'>Hogar</option>
+                <option value ='electro'>Electrodomésticos</option>
+                <option value ='indumentaria'>Indumentaria</option>
+            </select>
+        </div>
+        <div class='control-formulario'>
+            <label>Ciudad:</label>
+            <select name="ciudad" class='control'>
+                <option value ='baires'>Buenos Aires</option>
+                <option value ='cordoba'>Cordoba</option>
+                <option value ='mendoza'>Mendoza</option>
+            </select>
+        </div>
+        <div class='control-formulario' class='control'>
+            <label>Descripción:</label>
+            <textarea name='descripcion'></textarea>
+        </div>
+        <div class='control-formulario'>
+            <label>Esta en oferta?</label>
+            <input type='radio'name='enOferta'>
+        </div>
+        <button type='submit' class='boton-formulario'>Enviar</button>
+        <button type='reset' class='boton-formulario'>Borrar contenido</button>
+        </form>
+        
+        <article class='product'>
+            <img src='/images/iphone.jpg'>
+            <h2>Iphone 13</h2>
+        </article>
+    </main>
 </body>
     
 </html>

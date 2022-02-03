@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action='#' method ='POST' class='create-form'>
+        <div class='form-field'>
+            <label class="form-label">Nombre y apellido</label>
+            <input type="text" name='name' class='form-input'placeholder='letras'>
+        </div>
+        <div class='form-field'>
+            <label>Usuario</label>
+            <input type="text" name='user' class='form-input'placeholder='letras y numeros'>
+        </div>
+        <div class='form-field'>
+            <label class="form-label">Fecha de Nacimiento</label>
+            <input type="date" name='date' class='form-input' value='1950-01-01'>
+        </div>
+        <div class='form-field'>
+            <label class="form-label">Domicilio</label>
+            <input type="text" name='address' class='form-input'placeholder='letras y numeros'>
+        </div>
+        <div class='form-field'>
+            <label>Elige una opción:</label><br>
+            <input type='radio' name='perfil' value='Comprador'> Comprador</input>
+            <input type='radio' name='perfil' value='Vendedor'> Vendedor</input>
+        </div>
+        <div class='form-field form-checkbox'>
+            <label class="form-label">Categorías de Interés</label>
+            <div class= 'form-checkbox-inputs'>
+                <div><input type='checkbox'name='categories' value='electrodomésticos'> Electrodomésticos</div>
+                <div><input type='checkbox'name='categories' value='moda'> Moda</div>
+                <div><input type='checkbox'name='categories' value='hogar'> Hogar</div>
+                <div><input type='checkbox'name='categories' value='juguetería'> Jugueteria</div>
+                <div><input type='checkbox'name='categories' value='vidaSana'> Vida Sana</div>
+            </div>
+        </div>
+        <div class='form-field'>
+            <label class="form-label">Sube una imagen para tu perfil</label>
+            <input type="file" name='foto' class='form-input'>
+        </div>
+        <div class='form-field'>
+            <label class="form-label">Contraseña</label>
+            <input type="password" name='contraseña' class='form-input'placeholder='letras y numeros'>
+        </div>
+        <div class='form-field'>
+            <label class="form-label">Confirma Contraseña</label>
+            <input type="password" name='confirmContraseña' class='form-input'placeholder='letras y numeros'>
+        </div>
+        <button class='form-button' type="submit">Enviar</button>
+        <button class='form-button' type='reset'>Cancelar</button>
+    </form>
+
+</body>
+</html>
